@@ -104,14 +104,14 @@ if (isAuthenticated) return <Navigate to="/" />
                     </button>
                 </div>
             </form>
-            <div className="mt-4 text-grey-600">
+            {/* <div className="mt-4 text-grey-600">
                 Already have an account?{" "}
                 <span>
                     <Link to="/login" className="text-blue-500 hover:underline">
                         Log in
                     </Link>
                 </span>
-            </div>
+            </div> */}
         </div>
     </div>
 </div>
