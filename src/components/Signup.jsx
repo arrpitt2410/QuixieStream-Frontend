@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { Context } from '../main';
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 
 const Signup = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
@@ -27,10 +27,10 @@ const submitHandler = async (e) => {
       }
     );
     console.log(data)
-    toast.success(data.message);
+    // toast.success(data.message);
     setIsAuthenticated(true);
   } catch (error) {
-    toast.error("error logging in");
+    // toast.error("error logging in");
     setIsAuthenticated(false);
   }
 };
